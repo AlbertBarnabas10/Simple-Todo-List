@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #55565b;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.25rem;
+    color: #ababab;
+    margin-bottom: 12px;
+}
+
+#task_form {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+input,
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new_list {
+    flex: 1 1 0%;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    height: 40px;
+    padding: 1rem;
+}
+
+#new_list::placeholder{
+    color: black;
+}
+
+#new_task_submit {
+    font-size: 1rem;
+    color: rgb(25, 204, 132);
+    background-color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+main {
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+.task_list h2 {
+    font-size: 2rem;
+    color: #fefefe;
+    margin-bottom: 18px;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(232, 232, 232);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+#tasks .task .content .text{
+    color: black;
+    font-size: 1rem;
+    width: 100%;
+    display: block;
+    transition: .4s;
+}
+
+#tasks .task .actions{
+    display: flex;
+    margin: 0 20px;
+}
+
+.actions .delete_btn{
+    color: tomato;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
